@@ -1,17 +1,24 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/sidebar/sidebar";
-import { About } from "./components/about";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Portfolio from "./pages/portfolio";
+import Contact from "./pages/contact";
 
-export default function App() {
+function App() {
   return (
-    <div className="app-container">
+    <Router>
       <Sidebar />
-      <main className="main-content">
-        {/* <Header /> */}
-        <About />
-        {/* <Projects /> */}
-        {/* <Contact /> */}
-        {/* <Footer /> */}
+      <main style={{ marginLeft: "220px", padding: "2rem" }}>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
-    </div>
+    </Router>
   );
 }
+
+export default App;

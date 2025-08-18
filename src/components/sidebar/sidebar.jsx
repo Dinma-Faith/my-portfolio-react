@@ -1,22 +1,44 @@
-import React from "react";
-// import styles from "../styles/sidebar.module.css";
-// import ThemeControl from "./ThemeControl";
-import styles from "../sidebar/sidebar.module.css";
+import { NavLink } from "react-router-dom";
+import styles from "./sidebar.module.css";
 
-export const Sidebar = () => {
+const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
-      <div className={styles.logo}>Dinma</div>
-      <nav className={styles.nav}>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <div className={styles.logo}>
+        <NavLink to="/home">Dinma Anyanwu</NavLink>
+      </div>
+
+      <nav className={styles.navLinks}>
+        <NavLink
+          to="/home"
+          className={({ isActive }) => isActive ? styles.active : ""}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => isActive ? styles.active : ""}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/portfolio"
+          className={({ isActive }) => isActive ? styles.active : ""}
+        >
+          Portfolio
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => isActive ? styles.active : ""}
+        >
+          Contact
+        </NavLink>
       </nav>
 
-      {/* Theme control lives inside the sidebar/nav */}
-      {/* <div className={styles.themeWrapper}>
-        <ThemeControl />
-      </div> */}
+      <div className={styles.social}>
+        <a href="https://linkedin.com/in/chidinma-faith" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/Dinma-Faith" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </aside>
   );
 };
