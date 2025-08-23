@@ -1,45 +1,40 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./sidebar.module.css";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
-    <aside className={styles.sidebar}>
-      <div className={styles.logo}>
-        <NavLink to="/home">Dinma Anyanwu</NavLink>
+    <>
+      {/* Hamburger for mobile */}
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        <span className={isOpen ? styles.activeLine1 : ""}></span>
+        <span className={isOpen ? styles.activeLine2 : ""}></span>
+        <span className={isOpen ? styles.activeLine3 : ""}></span>
       </div>
 
-      <nav className={styles.navLinks}>
-        <NavLink
-          to="/home"
-          className={({ isActive }) => isActive ? styles.active : ""}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) => isActive ? styles.active : ""}
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/portfolio"
-          className={({ isActive }) => isActive ? styles.active : ""}
-        >
-          Portfolio
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) => isActive ? styles.active : ""}
-        >
-          Contact
-        </NavLink>
-      </nav>
+      {/* Sidebar / Overlay */}
+      <aside className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
+        <div className={styles.logo}>
+          <NavLink to="/home" onClick={toggleMenu}>My Portfolio</NavLink>
+        </div>
 
-      <div className={styles.social}>
-        <a href="https://linkedin.com/in/chidinma-faith" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/Dinma-Faith" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </aside>
+        <nav className={styles.navLinks}>
+          <NavLink to="/home" onClick={toggleMenu} className={({ isActive }) => isActive ? styles.active : ""}>Home</NavLink>
+          <NavLink to="/about" onClick={toggleMenu} className={({ isActive }) => isActive ? styles.active : ""}>About</NavLink>
+          <NavLink to="/portfolio" onClick={toggleMenu} className={({ isActive }) => isActive ? styles.active : ""}>Portfolio</NavLink>
+          <NavLink to="/contact" onClick={toggleMenu} className={({ isActive }) => isActive ? styles.active : ""}>Contact</NavLink>
+        </nav>
+
+        <div className={styles.social}>
+          <a href="https://linkedin.com/in/chidinma-faith" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/Dinma-Faith" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </aside>
+    </>
   );
 };
 
