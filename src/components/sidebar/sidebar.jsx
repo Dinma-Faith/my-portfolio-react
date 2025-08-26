@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FaHome, FaUserAlt, FaBriefcase, FaEnvelope } from "react-icons/fa";
 import styles from "./sidebar.module.css";
 
 const Sidebar = () => {
@@ -19,20 +20,41 @@ const Sidebar = () => {
       {/* Sidebar / Overlay */}
       <aside className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
         <div className={styles.logo}>
-          <NavLink to="/home" onClick={toggleMenu}>My Portfolio</NavLink>
+          <NavLink to="/home" onClick={toggleMenu}>
+            My Portfolio
+          </NavLink>
         </div>
 
         <nav className={styles.navLinks}>
-          <NavLink to="/home" onClick={toggleMenu} className={({ isActive }) => isActive ? styles.active : ""}>Home</NavLink>
-          <NavLink to="/about" onClick={toggleMenu} className={({ isActive }) => isActive ? styles.active : ""}>About</NavLink>
-          <NavLink to="/portfolio" onClick={toggleMenu} className={({ isActive }) => isActive ? styles.active : ""}>Portfolio</NavLink>
-          <NavLink to="/contact" onClick={toggleMenu} className={({ isActive }) => isActive ? styles.active : ""}>Contact</NavLink>
+          <NavLink
+            to="/home"
+            onClick={toggleMenu}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            <FaHome className={styles.icon} /> Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            onClick={toggleMenu}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            <FaUserAlt className={styles.icon} /> About
+          </NavLink>
+          <NavLink
+            to="/portfolio"
+            onClick={toggleMenu}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            <FaBriefcase className={styles.icon} /> Portfolio
+          </NavLink>
+          <NavLink
+            to="/contact"
+            onClick={toggleMenu}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            <FaEnvelope className={styles.icon} /> Contact
+          </NavLink>
         </nav>
-
-        <div className={styles.social}>
-          <a href="https://linkedin.com/in/chidinma-faith" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/Dinma-Faith" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
       </aside>
     </>
   );
