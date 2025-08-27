@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   transform: translateX(-100%);
@@ -28,8 +28,7 @@
 }
 
 .logo a {
-  color: var(--text-color, #333);
-  text-decoration: none;
+  color: var(--text-color);
   font-size: 1.8rem;
 }
 
@@ -43,8 +42,7 @@
 .navLinks a {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #333;
-  text-decoration: none;
+  color: var(--text-color);
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -53,7 +51,7 @@
 
 .navLinks a:hover,
 .navLinks a.active {
-  color: var(--skin-color, #0077ff);
+  color: var(--active-color);
   transform: translateX(3px);
 }
 
@@ -70,16 +68,16 @@
   margin-bottom: 2rem;
 }
 
-.social a {
+/* .social a {
   font-size: 1.3rem;
-  color: #555;
+  color: var(--skin-color);
   transition: color 0.3s ease, transform 0.3s ease;
-}
+} */
 
-.social a:hover {
+/* .social a:hover {
   color: var(--skin-color, #0077ff);
   transform: scale(1.2);
-}
+} */
 
 /* Hamburger icon */
 .hamburger {
@@ -94,9 +92,9 @@
 }
 
 .hamburger span {
-  height: 3px;
-  width: 28px;
-  background: #333;
+  height: 1px;
+  width: 32px;
+  background: var(--bg-dark);
   margin: 4px 0;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -117,13 +115,12 @@
 @media (min-width: 769px) {
   .sidebar {
     width: 220px;
-    transform: translateX(0); /* Always visible */
-    padding: 2rem 1rem;
+    transform: translateX(0);
     align-items: flex-start;
   }
 
   .logo {
-    margin-bottom: 15rem;
+    margin-bottom: 16rem;
     text-align: left;
   }
 
@@ -140,6 +137,6 @@
   }
 
   .hamburger {
-    display: none; /* Hide hamburger on desktop */
+    display: none;
   }
 }
