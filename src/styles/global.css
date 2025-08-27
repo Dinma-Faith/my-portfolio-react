@@ -41,4 +41,5 @@ img {
   --text-color: #333;
   --max-width: 1200px;
   --transition: all 0.3s ease-in-out;
+  --border-btm: #ddd;
 }

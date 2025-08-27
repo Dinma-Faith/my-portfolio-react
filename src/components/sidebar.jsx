@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaUserAlt, FaBriefcase, FaEnvelope } from "react-icons/fa";
-import styles from "./sidebar.module.css";
+import styles from "../styles/sidebar.module.css";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
