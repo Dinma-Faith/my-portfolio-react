@@ -1,7 +1,44 @@
+/* Reset default browser styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Root variables (easy theming later) */
 :root {
-  --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
-  --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
+  --primary-color: #6c63ff;
+  --active-color: #ff6584;
+  --bg-light: #fdf9ff;
+  --bg-dark: #2c2c2c;
+  --bg-sidebar: #fdf9ff;
+  --text-color: #333;
+  --max-width: 1200px;
+  --transition: all 0.3s ease-in-out;
 }

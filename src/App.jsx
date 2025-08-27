@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
+import "./styles/global.css";
 
 function App() {
   return (
