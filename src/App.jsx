@@ -9,17 +9,18 @@ import "./styles/global.css";
 function App() {
   return (
     <Router>
-      <Sidebar />
-      <main style={{ marginLeft: "220px", padding: "2rem" }}>
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
-          
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
+      <div className="app-container">
+        <Sidebar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
     </Router>
   );
 }
