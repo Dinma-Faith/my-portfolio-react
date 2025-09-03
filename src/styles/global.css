@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--f-fam);
   line-height: 1.6;
   background-color: var(--bg-light);
   color: var(--text-color);
@@ -61,4 +61,6 @@ img {
   --max-width: 1200px;
   --transition: all 0.3s ease-in-out;
   --border-btm: #ddd;
+
+  --f-fam: 'IBM Plex Sans Devanagari', sans-serif;
 }
