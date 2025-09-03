@@ -18,7 +18,7 @@ const Home = () => {
           <h1>
             Hello, my name is <span>Chidinma Anyanwu</span>
           </h1>
-          <h2>I'm a Frontend Developer</h2>
+          <h2>I'm a <span>Frontend Developer</span></h2>
           <p>
             Creative Frontend Web Developer focused on building responsive,
             accessible, and visually appealing user interfaces. Skilled in HTML,
@@ -48,10 +48,10 @@ const Home = () => {
 
           {/* Buttons */}
           <div className={styles.buttons}>
-            <a href="/resume.pdf" download className={styles.btnPrimary}>
+            <a href="/resume.pdf" download className={styles.btn}>
               Download Resume
             </a>
-            <a href="#contact" className={styles.btnSecondary}>
+            <a href="#contact" className={styles.btn}>
               Contact Me
             </a>
           </div>

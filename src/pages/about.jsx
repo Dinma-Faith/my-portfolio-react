@@ -1,9 +1,12 @@
 import styles from "../styles/about.module.css";
-// import profileImage from "../assets/profile.png"; 
+import profileImage from "../assets/profile.png"; 
 
 const About = () => {
   return (
     <section className={styles.about}>
+      <div className={styles.aboutImage}>
+        <img src={profileImage} alt="Chidinma Anyanwu" />
+      </div>
       <div className={styles.aboutText}>
         <h2>About Me</h2>
         <p>
@@ -17,9 +20,7 @@ const About = () => {
         </p>
       </div>
 
-      {/* <div className={styles.aboutImage}>
-        <img src={profileImage} alt="Chidinma Anyanwu" />
-      </div> */}
+      
     </section>
   );
 };
