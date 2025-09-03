@@ -1,4 +1,3 @@
-/* Reset default browser styles */
 *,
 *::before,
 *::after {
@@ -30,10 +29,30 @@ img {
   max-width: 100%;
   display: block;
 }
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  padding: 2rem;
+  margin-left: 0;
+}
+
+@media (min-width: 769px) {
+  .main-content {
+    margin-left: 220px;
+  }
+}
+
+.navlinks,
+.container {
+  margin-top: 5rem;
+}
+
 
 /* Root variables (easy theming later) */
 :root {
-  --primary-color: #6c63ff;
+  --white: #fff;
   --active-color: #ff6584;
   --bg-light: #fdf9ff;
   --bg-dark: #2c2c2c;
