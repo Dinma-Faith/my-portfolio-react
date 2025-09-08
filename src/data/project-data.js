@@ -1,5 +1,3 @@
-// src/data/projects.js
-
 const projects = [
   {
     name: "FAQ Accordion",

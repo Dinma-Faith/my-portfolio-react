@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaUserAlt, FaBriefcase, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaUserAlt, FaBriefcase, FaEnvelope, FaTools } from "react-icons/fa"; 
 import styles from "../styles/sidebar.module.css";
 
 const Sidebar = () => {
@@ -33,6 +33,7 @@ const Sidebar = () => {
           >
             <FaHome className={styles.icon} /> Home
           </NavLink>
+
           <NavLink
             to="/about"
             onClick={toggleMenu}
@@ -40,13 +41,23 @@ const Sidebar = () => {
           >
             <FaUserAlt className={styles.icon} /> About
           </NavLink>
+
           <NavLink
-            to="/portfolio"
+            to="/skills"
             onClick={toggleMenu}
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
-            <FaBriefcase className={styles.icon} /> Portfolio
+            <FaTools className={styles.icon} /> Skills
           </NavLink>
+
+          <NavLink
+            to="/projects"
+            onClick={toggleMenu}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            <FaBriefcase className={styles.icon} /> Projects
+          </NavLink>
+
           <NavLink
             to="/contact"
             onClick={toggleMenu}

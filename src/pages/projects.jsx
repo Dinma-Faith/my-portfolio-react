@@ -1,7 +1,7 @@
-import styles from "../styles/portfolio.module.css";
-import projects from "../data/projects";
+import styles from "../styles/projects.module.css";
+import projects from "../data/project-data";
 
-const Portfolio = () => {
+const Project = () => {
   return (
     <section className={styles.portfolio}>
       <h2>My Projects</h2>
@@ -21,4 +21,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Project;

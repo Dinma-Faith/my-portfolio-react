@@ -1,6 +1,5 @@
 import styles from "../styles/home.module.css";
-// import heroImage from "../assets/hero.png";
-import heroImage from "../assets/hero.png";
+import heroImage from "../assets/images/hero.png";
 // import { Link } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin, FaGithub } from "react-icons/fa";

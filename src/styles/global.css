@@ -29,9 +29,9 @@ img {
   max-width: 100%;
   display: block;
 }
-.app-container {
+/* .app-container {
   display: flex;
-}
+} */
 
 .main-content {
   padding: 2rem;
