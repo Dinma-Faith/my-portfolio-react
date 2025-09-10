@@ -1,26 +1,29 @@
+import React from "react";
 import styles from "../styles/projects.module.css";
-import projects from "../data/project-data";
+import projects from "../data/project-data"; // adjust path if needed
 
-const Project = () => {
+export default function Projects() {
   return (
-    <section className={styles.portfolio}>
-      <h2>My Projects</h2>
-      <div className={styles.grid}>
+    <section className={styles.projects}>
+      <h2 className={styles.heading}>Projects</h2>
+      <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
-          <div className={styles.card} key={index}>
-            {/* Screenshot */}
+          <div key={index} className={styles.card}>
+            {/* Project Image */}
             {project.image && (
               <img
                 src={project.image}
-                alt={`${project.name} screenshot`}
+                alt={project.title}
                 className={styles.image}
               />
             )}
 
-            {/* Name & description */}
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <span className={styles.tech}>{project.tech}</span>
+            {/* Title & description */}
+            <h3 className={styles.title}>{project.title}</h3>
+            <p className={styles.description}>{project.description}</p>
+
+            {/* Tech Stack */}
+            <div className={styles.tech}>{project.tech}</div>
 
             {/* Links */}
             <div className={styles.links}>
@@ -28,17 +31,17 @@ const Project = () => {
                 <a
                   href={project.demo}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className={styles.button}
                 >
-                  Live Demo
+                  Demo
                 </a>
               )}
               {project.source && (
                 <a
                   href={project.source}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className={styles.button}
                 >
                   Source Code
@@ -50,6 +53,4 @@ const Project = () => {
       </div>
     </section>
   );
-};
-
-export default Project;
+}
