@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--f-fam);
+  line-height: 1.6;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* .app-container {
+  display: flex;
+} */
+
+.main-content {
+  padding: 2rem;
+  margin-left: 0;
+}
+
+h2.heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .main-content {
+    margin-left: 220px;
+  }
+}
+
+.navlinks,
+.container {
+  margin-top: 5rem;
+}
+
+
+/* Root variables (easy theming later) */
+:root {
+  --white: #fff;
+  --active-color: #ff6584;
+  --bg-light: #fdf9ff;
+  --bg-dark: #2c2c2c;
+  --bg-sidebar: #fdf9ff;
+  --text-color: #333;
+  --max-width: 1200px;
+  --transition: all 0.3s ease-in-out;
+  --border-btm: #ddd;
+
+  --f-fam: 'IBM Plex Sans Devanagari', sans-serif;
+}
