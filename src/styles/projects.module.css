@@ -2,25 +2,17 @@
   padding: 2rem 1rem;
 }
 
-.heading {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
-
 .projectsGrid {
   display: grid;
   gap: 2rem;
 }
 
 .card {
-  background: var(--white, #fff);
+  background: var(--white);
   border: 1px solid var(--border-btm, #ddd);
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  text-align: center;
   transition: var(--transition, all 0.3s ease-in-out);
 }
 

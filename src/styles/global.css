@@ -38,6 +38,12 @@ img {
   margin-left: 0;
 }
 
+h2.heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
 @media (min-width: 769px) {
   .main-content {
     margin-left: 220px;

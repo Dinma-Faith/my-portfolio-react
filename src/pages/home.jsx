@@ -3,6 +3,7 @@ import heroImage from "../assets/images/hero.png";
 // import { Link } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import Button from "../components/button";
 
 const Home = () => {
   return (
@@ -47,12 +48,10 @@ const Home = () => {
 
           {/* Buttons */}
           <div className={styles.buttons}>
-            <a href="/resume.pdf" download className={styles.btn}>
-              Download Resume
-            </a>
-            <a href="#contact" className={styles.btn}>
-              Contact Me
-            </a>
+            <Button href="/resume.pdf" download>
+  Download Resume
+</Button>
+            <Button to="#contact">Contact Me</Button>
           </div>
         </div>
       </div>

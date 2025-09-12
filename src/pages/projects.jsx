@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "../styles/projects.module.css";
-import projects from "../data/project-data"; // adjust path if needed
+import projects from "../data/project-data";
+import Button from "../components/button";
 
 export default function Projects() {
   return (
     <section className={styles.projects}>
-      <h2 className={styles.heading}>Projects</h2>
+      <h2 className={`heading ${styles.heading}`}>Projects</h2>
       <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
-          <div key={index} className={styles.card}>
+          <div key={index} className={`${styles.card} ${styles.fadeIn}`}>
             {/* Project Image */}
             {project.image && (
               <img
@@ -27,26 +28,8 @@ export default function Projects() {
 
             {/* Links */}
             <div className={styles.links}>
-              {project.demo && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.button}
-                >
-                  Demo
-                </a>
-              )}
-              {project.source && (
-                <a
-                  href={project.source}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.button}
-                >
-                  Source Code
-                </a>
-              )}
+              {project.demo && <Button href={project.demo}>Demo</Button>}
+              {project.source && <Button href={project.source}>Source Code</Button>}
             </div>
           </div>
         ))}

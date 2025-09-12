@@ -1,11 +1,8 @@
 .skills {
   padding: 2rem 1rem;
-  text-align: center;
 }
 
 .skills h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
   color: var(--active-color);
 }
 
@@ -43,6 +40,7 @@
   font-size: 1rem;
   font-weight: 500;
   color: var(--text-color);
+  text-align: center;
 }
 
 /* Tablet */
