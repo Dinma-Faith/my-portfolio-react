@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/projects.module.css";
-import projects from "../data/project-data";
+import { projects } from "../data/project-data";
 import Button from "../components/button";
 
 export default function Projects() {

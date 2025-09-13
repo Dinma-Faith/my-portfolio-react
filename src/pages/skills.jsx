@@ -1,5 +1,5 @@
 import styles from "../styles/skills.module.css";
-import skillsData from "../data/skill-data";
+import { skillsData } from "../data/skill-data";
 
 const Skills = () => {
   return (
