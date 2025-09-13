@@ -9,7 +9,7 @@ import webpackLogo from "../assets/skills/webpack.svg";
 import typescriptLogo from "../assets/skills/typescript.svg";
 import postgresLogo from "../assets/skills/postgresql.svg";
 
-const skillsData = [
+export const skillsData = [
   { name: "HTML5", logo: htmlLogo },
   { name: "CSS3", logo: cssLogo },
   { name: "JavaScript", logo: jsLogo },
@@ -21,5 +21,3 @@ const skillsData = [
   { name: "Typescript.js", logo: typescriptLogo },
   { name: "PostgreSQL", logo: postgresLogo },
 ];
-
-export default skillsData;

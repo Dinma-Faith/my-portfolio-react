@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     title: "FAQ Accordion",
     description: "A React project displaying questions and answers with toggle functionality.",
@@ -36,5 +36,3 @@ const projects = [
     source: "#"
   }
 ];
-
-export default projects;
