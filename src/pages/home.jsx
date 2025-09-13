@@ -1,6 +1,5 @@
 import styles from "../styles/home.module.css";
 import heroImage from "../assets/images/hero.png";
-// import { Link } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Button from "../components/button";
@@ -18,7 +17,9 @@ const Home = () => {
           <h1>
             Hello, my name is <span>Chidinma Anyanwu</span>
           </h1>
-          <h2>I'm a <span>Frontend Developer</span></h2>
+          <h2>
+            I'm a <span>Frontend Developer</span>
+          </h2>
           <p>
             Creative Frontend Web Developer focused on building responsive,
             accessible, and visually appealing user interfaces. Skilled in HTML,
@@ -46,13 +47,9 @@ const Home = () => {
             </a>
           </div>
 
-          {/* Buttons */}
-          <div className={styles.buttons}>
             <Button href="/resume.pdf" download>
-  Download Resume
-</Button>
-            <Button to="#contact">Contact Me</Button>
-          </div>
+              Download Resume
+            </Button>
         </div>
       </div>
     </section>
