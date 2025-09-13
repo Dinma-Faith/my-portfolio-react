@@ -54,19 +54,3 @@ h2.heading {
 .container {
   margin-top: 5rem;
 }
-
-
-/* Root variables (easy theming later) */
-:root {
-  --white: #fff;
-  --active-color: #ff6584;
-  --bg-light: #fdf9ff;
-  --bg-dark: #2c2c2c;
-  --bg-sidebar: #fdf9ff;
-  --text-color: #333;
-  --max-width: 1200px;
-  --transition: all 0.3s ease-in-out;
-  --border-btm: #ddd;
-
-  --f-fam: 'IBM Plex Sans Devanagari', sans-serif;
-}
