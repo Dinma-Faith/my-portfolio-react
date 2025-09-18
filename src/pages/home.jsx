@@ -1,5 +1,5 @@
 import styles from "../styles/home.module.css";
-import heroImage from "../assets/images/hero.png";
+import codingHero from "../assets/images/coding_hero.png";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Button from "../components/button";
@@ -10,15 +10,20 @@ const Home = () => {
       <div className={styles.container}>
         {/* Hero Image */}
         <div className={styles.heroImage}>
-          <img src={heroImage} alt="Hero placeholder" />
+          <img
+            src={codingHero}
+            alt="Coding illustration"
+            className="responsiveImage"
+          />
         </div>
+
         {/* Hero Text */}
         <div className={styles.heroText}>
           <h1>
             Hello, my name is <span>Chidinma Anyanwu</span>
           </h1>
           <h2>
-            I'm a <span>Frontend Developer</span>
+            I'm a <span>Web Developer</span>
           </h2>
           <p>
             Creative Frontend Web Developer focused on building responsive,
@@ -33,13 +38,15 @@ const Home = () => {
             <a
               href="https://github.com/Dinma-Faith"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/chidinma-faith/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
@@ -47,9 +54,9 @@ const Home = () => {
             </a>
           </div>
 
-            <Button href="/resume.pdf" download>
-              Download Resume
-            </Button>
+          <Button href="/resume.pdf" download>
+            Download Resume
+          </Button>
         </div>
       </div>
     </section>
