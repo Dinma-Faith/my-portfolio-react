@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import aboutStyles from "../styles/about.module.css";
-import profileImage from "../assets/images/profile.png";
+import profileImage from "../assets/images/hero_img.jpg";
 import Button from "../components/button";
 
 const About = () => {
   return (
     <section className={aboutStyles.about}>
       <div className={aboutStyles.aboutImage}>
-        <img src={profileImage} alt="Chidinma Anyanwu" />
+        <img src={profileImage} alt="Chidinma Anyanwu" className="responsiveImage" />
       </div>
 
       <div className={aboutStyles.aboutText}>
