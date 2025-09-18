@@ -16,6 +16,9 @@
 }
 
 .skillBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--white);
   padding: 1.5rem 1rem;
   border-radius: 12px;
@@ -38,9 +41,8 @@
 
 .skillBox p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-color);
-  text-align: center;
 }
 
 /* Tablet */
