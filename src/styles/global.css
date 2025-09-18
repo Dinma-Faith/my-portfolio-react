@@ -20,6 +20,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main-content {
+  padding: 2rem;
+  margin-left: 0;
+}
+
+@media (min-width: 48.0625rem) {
+  .main-content {
+    margin-left: 220px;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -29,25 +40,39 @@ img {
   max-width: 100%;
   display: block;
 }
-/* .app-container {
-  display: flex;
-} */
 
-.main-content {
-  padding: 2rem;
-  margin-left: 0;
+.responsiveImage {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
 }
+
+.responsiveImage:hover {
+  transform: scale(1.02);
+}
+
+@media (min-width: 48rem) {
+  .responsiveImage {
+    max-width: 31.25rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .responsiveImage {
+    max-width: 37.5rem;
+  }
+}
+
 
 h2.heading {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: bold;
-}
-
-@media (min-width: 769px) {
-  .main-content {
-    margin-left: 220px;
-  }
 }
 
 .navlinks,
