@@ -25,12 +25,12 @@ const Home = () => {
           <h2>
             I'm a <span>Web Developer</span>
           </h2>
-          <p>
-            Creative Frontend Web Developer focused on building responsive,
-            accessible, and visually appealing user interfaces. Skilled in HTML,
-            CSS, JavaScript, React, and modern frontend tools. Passionate about
-            turning ideas into interactive experiences while continuously
-            improving through learning and collaboration.
+          <p className="text-[1rem] leading-6 text-gray-600 mt-4">
+            A passionate full-stack developer with a strong focus on
+            building user-friendly and visually appealing front-end
+            applications. I enjoy turning ideas into responsive, functional, and
+            accessible web experiences while continuously improving my skills
+            and exploring modern technologies.
           </p>
 
           {/* Social Links */}
@@ -38,15 +38,13 @@ const Home = () => {
             <a
               href="https://github.com/Dinma-Faith"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/chidinma-faith/"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <FaLinkedin />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
