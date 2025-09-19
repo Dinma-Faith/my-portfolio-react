@@ -16,7 +16,6 @@ const Contact = () => {
     <section className={styles.contact} id="contact">
       <div className={styles.container}>
         <h2 className={`heading ${styles.heading}`}>Contact Me</h2>
-        <p className={styles.sectionLabel}>Get in Touch</p>
 
         {/* Contact cards */}
         <div className={styles.contactGrid}>

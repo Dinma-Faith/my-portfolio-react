@@ -14,15 +14,6 @@
   color: var(--active-color);
 }
 
-.sectionLabel {
-  text-align: center;
-  font-size: 1.46rem;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin-bottom: 0.5rem;
-  color: var(--text-color);
-}
-
 .contactGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -85,7 +76,6 @@
 .formHeading {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 /* Form (mobile first) */
