@@ -22,25 +22,24 @@ const Form = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     const validationErrors = validateForm(values);
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) {
-      setSubmitted(true);
-
-      // Clear form
-      setValues({ name: "", email: "", message: "" });
-
-      // Simulate sending email here (replace with service later)
-      console.log("Form submitted successfully:", values);
-    } else {
+    if (Object.keys(validationErrors).length > 0) {
+      e.preventDefault(); // stop submit if errors
       setSubmitted(false);
+    } else {
+      setSubmitted(true);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
+    <form
+      action="https://formspree.io/f/mrbykeqe"
+      method="POST"
+      onSubmit={handleSubmit}
+      noValidate
+    >
       <div>
         <input
           type="text"
@@ -48,6 +47,7 @@ const Form = () => {
           placeholder="Your Name"
           value={values.name}
           onChange={handleChange}
+          required
         />
         {errors.name && <span className={style.error}>{errors.name}</span>}
       </div>
@@ -59,6 +59,7 @@ const Form = () => {
           placeholder="Your Email"
           value={values.email}
           onChange={handleChange}
+          required
         />
         {errors.email && <span className={style.error}>{errors.email}</span>}
       </div>
@@ -68,15 +69,15 @@ const Form = () => {
           name="message"
           placeholder="Your Message"
           value={values.message}
-          onChange={handleChange}></textarea>
+          onChange={handleChange}
+          required
+        ></textarea>
         {errors.message && (
           <span className={style.error}>{errors.message}</span>
         )}
       </div>
 
-      <Button type="submit" onClick={handleSubmit}>
-        Send Message
-      </Button>
+      <Button type="submit">Send Message</Button>
 
       {submitted && (
         <p className={style.success}>Message sent successfully!</p>
