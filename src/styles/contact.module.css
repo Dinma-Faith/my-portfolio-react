@@ -127,7 +127,6 @@ textarea::placeholder {
   font-style: italic;
   line-height: 1.2;
   color: var(--error-color);
-  margin: -0.2rem 0 0.2rem 0.25rem; /* compact spacing */
   align-self: center;
 }
 
@@ -139,7 +138,7 @@ textarea::placeholder {
   text-align: center;
 }
 
-/* Button inside form */
+/* Form Button*/
 form button {
   width: auto;
   align-self: center;
