@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     title: "FAQ Accordion",
     description: "Interactive FAQ accordion built with React, featuring expandable/collapsible answers.",
@@ -64,5 +64,3 @@ const projects = [
     demo: "https://dinma-portfolio.vercel.app/"
   }
 ];
-
-export default projects;
