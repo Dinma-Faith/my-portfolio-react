@@ -6,7 +6,6 @@
   color: var(--active-color);
 }
 
-/* Grid layout - Mobile first */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -45,14 +44,12 @@
   color: var(--text-color);
 }
 
-/* Tablet */
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop */
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
