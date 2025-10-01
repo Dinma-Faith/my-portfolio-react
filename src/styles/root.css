@@ -1,0 +1,35 @@
+:root {
+  /* Colors */
+  --white: #fff;
+  --active-color: #ff6584;
+  --bg-light: #fdf9ff;
+  --bg-dark: #2c2c2c;
+  --bg-sidebar: #fdf9ff;
+
+  --text-light: #555;
+  --text-color: #333;
+  --border-btm: #ddd;
+  --card-bg: #fff;
+  --bg-color: var(--bg-light);
+
+  --error-color: #ff3b30;
+  --success-color: #28a745;
+  --focus-ring: #6c63ff33;
+
+  /* Layout */
+  --max-width: 1200px;
+  --transition: all 0.3s ease-in-out;
+
+  /* Fonts */
+  --f-fam: 'IBM Plex Sans Devanagari', sans-serif;
+
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --text-color: #f5f5f5;
+  --text-light: #ddd;
+  --bg-color: #121212;
+  --bg-sidebar: #1e1e1e;
+  --card-bg: #1e1e1e;
+}

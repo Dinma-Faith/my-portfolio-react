@@ -5,7 +5,7 @@ const Button = ({ children, to, href, type = "button", onClick }) => {
   // Button for Internal route
   if (to) {
     return (
-      <Link to={to} className={styles.btn}>
+      <Link to={to} className={styles.btns}>
         {children}
       </Link>
     );
@@ -14,7 +14,7 @@ const Button = ({ children, to, href, type = "button", onClick }) => {
   //Button for External link
   if (href) {
     return (
-      <a href={href} target="_blank" rel="noreferrer" className={styles.btn}>
+      <a href={href} target="_blank" rel="noreferrer" className={styles.btns}>
         {children}
       </a>
     );
@@ -22,7 +22,7 @@ const Button = ({ children, to, href, type = "button", onClick }) => {
 
   // Regular button for form submit or action
   return (
-    <button type={type} onClick={onClick} className={styles.btn}>
+    <button type={type} onClick={onClick} className={styles.btns}>
       {children}
     </button>
   );
