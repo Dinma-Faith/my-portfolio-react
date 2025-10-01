@@ -14,7 +14,7 @@ html {
 body {
   font-family: var(--f-fam);
   line-height: 1.6;
-  background-color: var(--bg-light);
+  background-color: var(--bg-color);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,7 +49,7 @@ img {
   display: block;
   margin: 0 auto;
   border-radius: 0.5rem;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition);
 }
 
 .responsiveImage:hover {
@@ -67,7 +67,6 @@ img {
     max-width: 37.5rem;
   }
 }
-
 
 h2.heading {
   font-size: 2rem;
