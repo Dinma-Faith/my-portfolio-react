@@ -14,10 +14,21 @@ html {
 body {
   font-family: var(--f-fam);
   line-height: 1.6;
-  background-color: var(--bg-light);
+  background-color: var(--bg-color);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.main-content {
+  padding: 2rem;
+  margin-left: 0;
+}
+
+@media (min-width: 48.0625rem) {
+  .main-content {
+    margin-left: 220px;
+  }
 }
 
 a {
@@ -29,13 +40,32 @@ img {
   max-width: 100%;
   display: block;
 }
-/* .app-container {
-  display: flex;
-} */
 
-.main-content {
-  padding: 2rem;
-  margin-left: 0;
+.responsiveImage {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  transition: transform var(--transition);
+}
+
+.responsiveImage:hover {
+  transform: scale(1.02);
+}
+
+@media (min-width: 48rem) {
+  .responsiveImage {
+    max-width: 31.25rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .responsiveImage {
+    max-width: 37.5rem;
+  }
 }
 
 h2.heading {
@@ -44,29 +74,7 @@ h2.heading {
   font-weight: bold;
 }
 
-@media (min-width: 769px) {
-  .main-content {
-    margin-left: 220px;
-  }
-}
-
 .navlinks,
 .container {
   margin-top: 5rem;
-}
-
-
-/* Root variables (easy theming later) */
-:root {
-  --white: #fff;
-  --active-color: #ff6584;
-  --bg-light: #fdf9ff;
-  --bg-dark: #2c2c2c;
-  --bg-sidebar: #fdf9ff;
-  --text-color: #333;
-  --max-width: 1200px;
-  --transition: all 0.3s ease-in-out;
-  --border-btm: #ddd;
-
-  --f-fam: 'IBM Plex Sans Devanagari', sans-serif;
 }

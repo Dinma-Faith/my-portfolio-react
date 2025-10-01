@@ -61,7 +61,6 @@
   vertical-align: middle;
 }
 
-/* Social links (bottom icons) */
 .social {
   display: flex;
   gap: 1.2rem;
@@ -69,43 +68,32 @@
   margin-bottom: 2rem;
 }
 
-/* .social a {
-  font-size: 1.3rem;
-  color: var(--skin-color);
-  transition: color 0.3s ease, transform 0.3s ease;
-} */
-
-/* .social a:hover {
-  color: var(--skin-color, #0077ff);
-  transform: scale(1.2);
-} */
-
-/* Hamburger icon */
 .hamburger {
   display: flex;
   position: fixed;
   width: 100%;
-  height: 60px;  
+  height: 60px;
   top: 0;
   left: 0;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
   z-index: 200;
-  background: var(--white);
+  background: var(--bg-color);
   padding-left: 1.2rem;
+  transition: var(--transition);
 }
 
 .hamburger span {
+  display: block;
+  width: 30px;
   height: 1px;
-  width: 32px;
-  background: var(--bg-dark);
   margin: 4px 0;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  background: var(--text-color);
+  transition: var(--transition);
 }
 
-/* Animate Hamburger into X */
+
 .activeLine1 {
   transform: rotate(45deg) translate(5px, 6px);
 }
@@ -116,7 +104,6 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* ========== Tablet & Desktop Enhancements ========== */
 @media (min-width: 769px) {
   .sidebar {
     width: 220px;

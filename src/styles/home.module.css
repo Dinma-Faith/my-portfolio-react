@@ -11,18 +11,11 @@
   width: 100%;
 }
 
-/* Hero Image */
-.heroImage img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin: 0 auto;
-}
-
 /* Hero Text */
 .heroText h1 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  color: var(--text-color);
 }
 
 .heroText span {
@@ -45,7 +38,7 @@
 /* Social Links */
 .socialLinks {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -85,6 +78,7 @@
 
   .heroText {
     flex: 2;
+    margin-top: 6rem;
   }
 
   .heroText h1 {

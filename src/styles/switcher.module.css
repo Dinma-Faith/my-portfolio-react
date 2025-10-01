@@ -1,5 +1,0 @@
-.switcher { position: fixed; right: 0.5rem; bottom: 0.5rem; }
-.themeToggles { display: flex; gap: 0.5rem; align-items: center; }
-.dayNight { border: none; background: transparent; font-size: 1.25rem; cursor: pointer; }
-.colors { display: flex; gap: 0.25rem; }
-.colorDot { width: 20px; height: 20px; border-radius: 50%; border: none; cursor: pointer; }
