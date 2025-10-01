@@ -26,7 +26,7 @@ const Form = () => {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length > 0) {
-      e.preventDefault(); // stop submit if errors
+      e.preventDefault();
       setSubmitted(false);
     } else {
       setSubmitted(true);

@@ -21,22 +21,22 @@
   align-items: center;
   background: var(--card-bg);
   padding: 1.5rem 1rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
   width: 100%;
-  max-width: 300px;
+  max-width: 18.75rem;
 }
 
 .skillBox:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.3125rem);
 }
 
 .skillBox img {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   object-fit: contain;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem; 
 }
 
 .skillBox p {
@@ -46,14 +46,14 @@
 }
 
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
