@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { FaCog, FaSun, FaMoon } from "react-icons/fa";
+import { FaCog, FaMoon } from "react-icons/fa";
+import { FiSun } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "../styles/theme-switcher.module.css";
 
@@ -27,7 +28,7 @@ const ThemeSwitcher = () => {
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         className={`${styles.btn} ${styles.modeBtn}`}
       >
-        {theme === "light" ? <FaMoon size={18} /> : <FaSun size={18} />}
+        {theme === "light" ? <FaMoon size={18} /> : <FiSun size={18} />}
       </button>
 
       {/* Settings Button */}
