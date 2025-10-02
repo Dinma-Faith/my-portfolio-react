@@ -29,7 +29,7 @@
 
 .palette {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 0.5rem;
   background: var(--bg-light);
   padding: 0.5rem 0.75rem;
