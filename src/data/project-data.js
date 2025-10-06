@@ -67,6 +67,6 @@ export const projects = [
     tech: "React, CSS Modules",
     image: "/projects/my-portfolio.png",
     source: "https://github.com/Dinma-Faith/my-portfolio-react/",
-    demo: "https://react-users-explorer.netlify.app/",
+    demo: "https://dinmas-real-portfolio.netlify.app/",
   },
 ];
